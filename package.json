@@ -35,6 +35,7 @@
     "should": "^11.1.0"
   },
   "dependencies": {
-    "amqplib": "^0.4.1"
+    "amqplib": "^0.4.1",
+    "babel-runtime": "^6.11.6"
   }
 }
