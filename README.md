@@ -24,7 +24,8 @@ const config = {
 async function () {
   const testQueueName = 'test_queue';
   
-  // Connect amqp. It is a singletone. In real code you can initialize connection in you main app file.
+  /* Connect amqp. 
+  Amqp-simple-connect is a singletone. In real code you can initialize connection in you main app file. */
   await amqp.connect(config);
   
   // Create queue. You can create as many queues as you want;
