@@ -44,6 +44,10 @@ class AMQP {
   }
 
   async createQueue(qName, options) {
+    if (!this.connected) {
+      console.warn('Try to create queue in disconnected exchanger');
+    }
+
     const q = new Queue(qName, this.config);
     return await q.connect(this._connection, this.config, {...this.options, options});
   }
