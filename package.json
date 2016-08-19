@@ -34,7 +34,7 @@
     "mocha": "^3.0.2",
     "should": "^11.1.0"
   },
-  "peerDependencies": {
+  "dependencies": {
     "amqplib": "^0.4.1",
     "babel-runtime": "^6.11.6"
   }
