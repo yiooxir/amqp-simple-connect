@@ -1,10 +1,11 @@
 import 'mocha';
 import amqp from '../lib';
 
-const config = {
-  path: 'amqp://wrmxpydd:HdlmdXwG9kKz7hp3abQXjlYG8JoTzXk7@spotted-monkey.rmq.cloudamqp.com/wrmxpydd',
-  exchange: 'fx-test.topic',
-}
+// const config = {
+//   path: 'amqp://wrmxpydd:HdlmdXwG9kKz7hp3abQXjlYG8JoTzXk7@spotted-monkey.rmq.cloudamqp.com/wrmxpydd',
+//   exchange: 'fx-test.topic',
+// }
+const config={}
 
 describe('test', () => {
   let testQueue;

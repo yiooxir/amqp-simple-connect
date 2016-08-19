@@ -5,7 +5,7 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-register",
-    "build": "babel src -d lib",
+    "build": "babel src -d lib --source-maps inline",
     "clear": "rimraf lib",
     "prepublish": "npm version patch && git push origin master && npm run clear && npm run build"
   },
