@@ -1,6 +1,6 @@
 {
   "name": "amqp-simple-connect",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Simple interface for AMQP library.",
   "main": "lib/index.js",
   "scripts": {
