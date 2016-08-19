@@ -22,6 +22,9 @@ class AMQP {
   async connect(config) {
 
     if (this.connected) return this;
+    if (!this.config.path) {
+      throw new Error('Parameter @path required for connecting to queue');
+    }
 
     this._connection = await connect(config, this.options);
     this._emitter = new Emitter();
