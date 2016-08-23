@@ -18,6 +18,9 @@ class AMQP {
     timeout: 1900,
     reportLevel: 'error'
   }
+  configure(options) {
+    return this.options = Object.assign({}, this.options, options);
+  }
 
   async connect(config={}) {
 
@@ -49,7 +52,7 @@ class AMQP {
     }
 
     const q = new Queue(qName, this.config);
-    return await q.connect(this._connection, this.config, {...this.options, options});
+    return await q.connect(this._connection, this.config, {...this.options, ...options});
   }
 }
 
