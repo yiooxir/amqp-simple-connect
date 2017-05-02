@@ -1,3 +1,1 @@
---compilers js:babel-register
---require should
 --timeout 10000
